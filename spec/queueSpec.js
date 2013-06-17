@@ -1,8 +1,9 @@
 describe("queue", function() {
   var queue;
 
-  // Before each test runs, create a new Queue
+  /* BEGIN DO NOT MODIFY */
   beforeEach(function() {
+    // Before each test runs, create a new Queue
     if (runner.is('src/functional') || runner.is('src/functional-shared')) {
       queue = makeQueue();
     } else if (runner.is('src/prototypal')) {
@@ -11,22 +12,14 @@ describe("queue", function() {
       queue = new Queue();
     }
   });
+  /* END DO NOT MODIFY */
 
   // Any queue implementation should have the following methods
-  it('should have "add", "remove", and "size" methods', function() {
-    expect(queue.add).to.be.a('function');
-    expect(queue.remove).to.be.a('function');
+  it('should have "enqueue", "dequeue", and "size" methods', function() {
+    expect(queue.enqueue).to.be.a('function');
+    expect(queue.dequeue).to.be.a('function');
     expect(queue.size).to.be.a('function');
   });
 
-  // Organize your tests with nested describe() statements
-  // Use '#methodName()' to denote tests that focus on a certain method
-  describe('#add()', function() {
-    it('should take one argument', function() {
-      // Make sure add() takes a single argument using (see http://mdn.io/Function.length)
-      expect(queue.add.length).to.equal(1);
-    });
-  });
-
-  // Hey! Add more tests here to test the functionality of queue
+  // Hey! Add tests here that thoroughly test the functionality of your queue
 });
