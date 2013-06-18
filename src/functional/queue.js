@@ -7,10 +7,10 @@ var makeQueue = function(){
   // Implement the methods below
   var queue = {};
 
-  queue.add = function(value){
+  queue.enqueue = function(value){
   };
 
-  queue.remove = function(){
+  queue.dequeue = function(){
   };
 
   queue.size = function(){

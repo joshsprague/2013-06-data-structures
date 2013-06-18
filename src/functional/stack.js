@@ -7,10 +7,10 @@ var makeStack = function(){
   // Implement the methods below
   var stack = {};
 
-  stack.add = function(value){
+  stack.push = function(value){
   };
 
-  stack.remove = function(){
+  stack.pop = function(){
   };
 
   stack.size = function(){
